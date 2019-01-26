@@ -10,18 +10,18 @@ class disjoint_set
         vector<int> r, p;
 
         disjoint_set(int n) {
-        r.resize(n+5, 0);
-        p.resize(n+5);
-        for(int i = 0; i <= n; i++)
-            p[i] = i;
+			r.resize(n+5, 0);
+			p.resize(n+5);
+			for(int i = 0; i <= n; i++)
+				p[i] = i;
         }
 
         int find_set(int i) {
-        return (p[i] == i) ?i :(p[i] = find_set(p[i]));
+        	return (p[i] == i) ?i :(p[i] = find_set(p[i]));
         }
 
         int same_set(int i, int j) {
-        return find_set(i) == find_set(j);
+        	return find_set(i) == find_set(j);
         }
 
         void union_set(int i, int j) {
