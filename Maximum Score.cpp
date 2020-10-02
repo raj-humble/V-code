@@ -1,10 +1,11 @@
+//raj_orton
 #include <bits/stdc++.h>
 using namespace std;
 
-#define lli long long
+#define int long long
 #define pii pair<lli,lli>
 
-int main() {
+signed main() {
 
     int t;
     cin >> t;
@@ -15,7 +16,7 @@ int main() {
         cin >> n;
 
         if(n == 0) {
-            cout<< 0 << endl;
+            cout << 0 << endl;
             continue;
         }
 
